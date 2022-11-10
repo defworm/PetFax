@@ -1,19 +1,23 @@
-#Config
+# #Config
 
-from flask import Flask
+# from flask import Flask
 
-#instantiate flask
+# #instantiate flask (applications are initiated as an instance of Flaske. This can be done globally in a root app.py file.)
 
-app= Flask(__name__)
+# app= Flask(__name__)
 
-#root route
+# #root route
 
-@app.route("/")
-def index():
-    return "Hello, this is pet fax"
+# @app.route("/")
+# def index():
+#     return "Hello, this is pet fax"
 
-# pets index route
-@app.route ('/pets')
-def pets():
-    return "These are our pets available for adoption!"
+# # pets index route
+# @app.route ('/pets')
+# def pets():
+#     return "These are our pets available for adoption!"
+
+from petfax import create_app
+
+app = create_app()
 
