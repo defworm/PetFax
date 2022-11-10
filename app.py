@@ -17,6 +17,9 @@
 # def pets():
 #     return "These are our pets available for adoption!"
 
+# All of the above was moved into the new __init__.py folder.
+
+
 from petfax import create_app
 
 app = create_app()
