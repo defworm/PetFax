@@ -23,5 +23,9 @@
 
 {% block body %}
 <H1>UserFax</H1>
- 
+    {% for fact in facts %}
+        <h4>Submitted by {{fact.submitter }}</h4>
+        {{fact.fact}}
+    {% endfor %}
+
 {% endblock %}
